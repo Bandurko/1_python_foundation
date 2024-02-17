@@ -1,0 +1,228 @@
+Не все тесты пройдены, есть ошибки :(
+
+
+Количество затраченных попыток: 3
+
+Время выполнения: 2.245498 сек
+
+Общая статистика
+
+Всего тестов: 5. Пройдено: 2. Не пройдено: 3.
+
+Подробную информацию по каждому тесту смотрите ниже.
+
+
+
+==========================================================
+
+Тест 1
+Тест пройден успешно ✓
+
+Формулировка:
+
+* Итоговый код для проверки.
+
+text = 'Hello world. Hello Python. Hello again.'
+
+
+
+import warnings
+
+warnings.filterwarnings('ignore')
+
+#При отправке кода на Выполнение раскомментируйте строку ниже, чтобы задать значения аргументов и вызвать функцию
+
+#При отправке решения на Проверку закомментируйте эту строку обратно - система автоматически подставит разные значения аргументов и вызовет функцию для проверки
+
+#text = 'Hello world. Hello Python. Hello again.'
+
+# Введите ваше решение ниже
+import re
+from collections import Counter
+
+def top_10_words(text):
+    words = re.findall(r'\b\w+\b', text.lower())
+    return Counter(words).most_common(10)
+
+#text = 'Hello world. Hello Python. Hello again.'
+print(top_10_words(text))
+
+
+
+============================================================================
+
+Тест 2
+Тест не пройден ✗
+
+Формулировка:
+
+* Итоговый код для проверки.
+
+text = 'This is a sample text without repeating words.'
+
+
+
+import warnings
+
+warnings.filterwarnings('ignore')
+
+#При отправке кода на Выполнение раскомментируйте строку ниже, чтобы задать значения аргументов и вызвать функцию
+
+#При отправке решения на Проверку закомментируйте эту строку обратно - система автоматически подставит разные значения аргументов и вызовет функцию для проверки
+
+#text = 'Hello world. Hello Python. Hello again.'
+
+# Введите ваше решение ниже
+import re
+from collections import Counter
+
+def top_10_words(text):
+    words = re.findall(r'\b\w+\b', text.lower())
+    return Counter(words).most_common(10)
+
+#text = 'Hello world. Hello Python. Hello again.'
+print(top_10_words(text))
+
+
+Ожидаемый ответ:
+
+[('words', 1), ('without', 1), ('this', 1), ('text', 1), ('sample', 1), ('repeating', 1), ('is', 1), ('a', 1)]
+
+Ваш ответ:
+
+[('this', 1), ('is', 1), ('a', 1), ('sample', 1), ('text', 1), ('without', 1), ('repeating', 1), ('words', 1)]
+
+========================================================================================
+
+
+
+Тест 3
+Тест не пройден ✗
+
+Формулировка:
+
+* Итоговый код для проверки.
+
+text = "Python 3.9 is the latest version of Python. It's awesome!"
+
+
+
+
+import warnings
+
+warnings.filterwarnings('ignore')
+
+#При отправке кода на Выполнение раскомментируйте строку ниже, чтобы задать значения аргументов и вызвать функцию
+
+#При отправке решения на Проверку закомментируйте эту строку обратно - система автоматически подставит разные значения аргументов и вызовет функцию для проверки
+
+#text = 'Hello world. Hello Python. Hello again.'
+
+# Введите ваше решение ниже
+import re
+from collections import Counter
+
+def top_10_words(text):
+    words = re.findall(r'\b\w+\b', text.lower())
+    return Counter(words).most_common(10)
+
+#text = 'Hello world. Hello Python. Hello again.'
+print(top_10_words(text))
+
+
+
+Ожидаемый ответ:
+
+[('python', 2), ('version', 1), ('the', 1), ('s', 1), ('of', 1), ('latest', 1), ('it', 1), ('is', 1), ('awesome', 1)]
+
+Ваш ответ:
+
+[('python', 2), ('3', 1), ('9', 1), ('is', 1), ('the', 1), ('latest', 1), ('version', 1), ('of', 1), ('it', 1), ('s', 1)]
+
+================================================================================
+
+
+
+Тест 4
+Тест пройден успешно ✓
+
+Формулировка:
+
+* Итоговый код для проверки.
+
+text = 'Python is python, is, IS, and PYTHON.'
+
+
+
+import warnings
+
+warnings.filterwarnings('ignore')
+
+#При отправке кода на Выполнение раскомментируйте строку ниже, чтобы задать значения аргументов и вызвать функцию
+
+#При отправке решения на Проверку закомментируйте эту строку обратно - система автоматически подставит разные значения аргументов и вызовет функцию для проверки
+
+#text = 'Hello world. Hello Python. Hello again.'
+
+# Введите ваше решение ниже
+import re
+from collections import Counter
+
+def top_10_words(text):
+    words = re.findall(r'\b\w+\b', text.lower())
+    return Counter(words).most_common(10)
+
+#text = 'Hello world. Hello Python. Hello again.'
+print(top_10_words(text))
+
+=======================================================
+
+
+
+Тест 5
+Тест не пройден ✗
+
+Формулировка:
+
+* Итоговый код для проверки.
+
+text = "The quick brown fox jumps over the lazy dog. Lazy dog, lazy fox!"
+
+
+
+
+import warnings
+
+warnings.filterwarnings('ignore')
+
+#При отправке кода на Выполнение раскомментируйте строку ниже, чтобы задать значения аргументов и вызвать функцию
+
+#При отправке решения на Проверку закомментируйте эту строку обратно - система автоматически подставит разные значения аргументов и вызовет функцию для проверки
+
+#text = 'Hello world. Hello Python. Hello again.'
+
+# Введите ваше решение ниже
+import re
+from collections import Counter
+
+def top_10_words(text):
+    words = re.findall(r'\b\w+\b', text.lower())
+    return Counter(words).most_common(10)
+
+#text = 'Hello world. Hello Python. Hello again.'
+print(top_10_words(text))
+
+
+
+Ожидаемый ответ:
+
+[('lazy', 3), ('the', 2), ('fox', 2), ('dog', 2), ('quick', 1), ('over', 1), ('jumps', 1), ('brown', 1)]
+
+Ваш ответ:
+
+[('lazy', 3), ('the', 2), ('fox', 2), ('dog', 2), ('quick', 1), ('brown', 1), ('jumps', 1), ('over', 1)]
+
+=================================================
+
+
+ 

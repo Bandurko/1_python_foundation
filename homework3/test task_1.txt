@@ -1,0 +1,537 @@
+1=======================================
+
+
+items = {
+    "ключи": 0.3,
+    "кошелек": 0.2,
+    "телефон": 0.5,
+    "зажигалка": 0.1
+}
+max_weight = 1.0
+
+
+
+
+import warnings
+
+warnings.filterwarnings('ignore')
+
+#При отправке кода на Выполнение раскомментируйте строку ниже, чтобы задать значения аргументов и вызвать функцию
+
+#При отправке решения на Проверку закомментируйте эту строку обратно - система автоматически подставит разные значения аргументов и вызовет функцию для проверки
+
+#items = {
+#     "ключи": 0.3,
+#     "кошелек": 0.2,
+#     "телефон": 0.5,
+#     "зажигалка": 0.1
+# }
+#max_weight = 1.0
+
+# Введите ваше решение ниже
+
+possible_items = []
+for key, value in items.items():
+    if value <= max_weight:
+        possible_items.append(key)
+        max_weight -= value
+
+print(possible_items) 
+
+
+max_weight = 1.0
+backpacks_test = []
+sorted_result = []
+for i in range(2**len(items)):
+    backpack_test = {}
+    weight = 0
+    for j, item in enumerate(items):
+        if i & (1 << j):
+            if weight + items[item] <= max_weight:
+                backpack_test[item] = items[item]
+                weight += items[item]
+            else:
+                break
+    backpacks_test.append(backpack_test)
+
+full_result = [backpack_test for backpack_test in backpacks_test if backpack_test]
+result = []
+for item in full_result:
+    if item not in result:
+        result.append(item)
+
+x = 0
+for i in result:
+    if dict(sorted(i.items(), key=lambda item: item[1], reverse=True)) == dict(sorted(backpack.items(), key=lambda item: item[1], reverse=True)):
+        x += 1
+if x > 0:  
+    print(True)
+else:
+    print(False)
+
+==2================================================================================================
+
+items = {
+    "ноутбук": 2.0,
+    "книги": 1.5,
+    "зарядное устройство": 0.5,
+    "бутерброды": 0.3,
+    "вода": 1.0
+}
+max_weight = 5.0
+
+
+
+
+import warnings
+
+warnings.filterwarnings('ignore')
+
+#При отправке кода на Выполнение раскомментируйте строку ниже, чтобы задать значения аргументов и вызвать функцию
+
+#При отправке решения на Проверку закомментируйте эту строку обратно - система автоматически подставит разные значения аргументов и вызовет функцию для проверки
+
+#items = {
+#     "ключи": 0.3,
+#     "кошелек": 0.2,
+#     "телефон": 0.5,
+#     "зажигалка": 0.1
+# }
+#max_weight = 1.0
+
+# Введите ваше решение ниже
+
+possible_items = []
+for key, value in items.items():
+    if value <= max_weight:
+        possible_items.append(key)
+        max_weight -= value
+
+print(possible_items) 
+
+
+max_weight = 5.0
+backpacks_test = []
+sorted_result = []
+for i in range(2**len(items)):
+    backpack_test = {}
+    weight = 0
+    for j, item in enumerate(items):
+        if i & (1 << j):
+            if weight + items[item] <= max_weight:
+                backpack_test[item] = items[item]
+                weight += items[item]
+            else:
+                break
+    backpacks_test.append(backpack_test)
+
+full_result = [backpack_test for backpack_test in backpacks_test if backpack_test]
+result = []
+for item in full_result:
+    if item not in result:
+        result.append(item)
+
+x = 0
+for i in result:
+    if dict(sorted(i.items(), key=lambda item: item[1], reverse=True)) == dict(sorted(backpack.items(), key=lambda item: item[1], reverse=True)):
+        x += 1
+if x > 0:  
+    print(True)
+else:
+    print(False)
+
+==3================================================================
+
+items = {
+    "лодка": 3.0,
+    "велосипед": 4.0,
+    "мангал": 2.0
+}
+max_weight = 2.0
+
+
+
+
+import warnings
+
+warnings.filterwarnings('ignore')
+
+#При отправке кода на Выполнение раскомментируйте строку ниже, чтобы задать значения аргументов и вызвать функцию
+
+#При отправке решения на Проверку закомментируйте эту строку обратно - система автоматически подставит разные значения аргументов и вызовет функцию для проверки
+
+#items = {
+#     "ключи": 0.3,
+#     "кошелек": 0.2,
+#     "телефон": 0.5,
+#     "зажигалка": 0.1
+# }
+#max_weight = 1.0
+
+# Введите ваше решение ниже
+
+possible_items = []
+for key, value in items.items():
+    if value <= max_weight:
+        possible_items.append(key)
+        max_weight -= value
+
+print(possible_items) 
+
+
+max_weight = 2.0
+backpacks_test = []
+sorted_result = []
+for i in range(2**len(items)):
+    backpack_test = {}
+    weight = 0
+    for j, item in enumerate(items):
+        if i & (1 << j):
+            if weight + items[item] <= max_weight:
+                backpack_test[item] = items[item]
+                weight += items[item]
+            else:
+                break
+    backpacks_test.append(backpack_test)
+
+full_result = [backpack_test for backpack_test in backpacks_test if backpack_test]
+result = []
+for item in full_result:
+    if item not in result:
+        result.append(item)
+
+x = 0
+for i in result:
+    if dict(sorted(i.items(), key=lambda item: item[1], reverse=True)) == dict(sorted(backpack.items(), key=lambda item: item[1], reverse=True)):
+        x += 1
+if x > 0:  
+    print(True)
+else:
+    print(False)
+
+==4==================================================
+
+items = {
+    "спальник": 1.5,
+    "палатка": 3.2,
+    "термос": 0.6,
+    "карта": 0.1,
+    "фонарик": 0.3,
+    "котелок": 0.8,
+    "еда": 2.5,
+    "одежда": 1.7,
+    "обувь": 1.2,
+    "нож": 0.2
+}
+max_weight = 7.0
+
+
+
+
+import warnings
+
+warnings.filterwarnings('ignore')
+
+#При отправке кода на Выполнение раскомментируйте строку ниже, чтобы задать значения аргументов и вызвать функцию
+
+#При отправке решения на Проверку закомментируйте эту строку обратно - система автоматически подставит разные значения аргументов и вызовет функцию для проверки
+
+#items = {
+#     "ключи": 0.3,
+#     "кошелек": 0.2,
+#     "телефон": 0.5,
+#     "зажигалка": 0.1
+# }
+#max_weight = 1.0
+
+# Введите ваше решение ниже
+
+possible_items = []
+for key, value in items.items():
+    if value <= max_weight:
+        possible_items.append(key)
+        max_weight -= value
+
+print(possible_items) 
+
+
+max_weight =7.0
+backpacks_test = []
+sorted_result = []
+for i in range(2**len(items)):
+    backpack_test = {}
+    weight = 0
+    for j, item in enumerate(items):
+        if i & (1 << j):
+            if weight + items[item] <= max_weight:
+                backpack_test[item] = items[item]
+                weight += items[item]
+            else:
+                break
+    backpacks_test.append(backpack_test)
+
+full_result = [backpack_test for backpack_test in backpacks_test if backpack_test]
+result = []
+for item in full_result:
+    if item not in result:
+        result.append(item)
+
+x = 0
+for i in result:
+    if dict(sorted(i.items(), key=lambda item: item[1], reverse=True)) == dict(sorted(backpack.items(), key=lambda item: item[1], reverse=True)):
+        x += 1
+if x > 0:  
+    print(True)
+else:
+    print(False)
+
+==5===============================================
+
+items = {
+    "спальник": 2.0,
+    "палатка": 3.5,
+    "термос": 0.8,
+    "карта": 0.2,
+    "фонарик": 0.5,
+    "котелок": 1.0,
+    "еда": 3.0,
+    "одежда": 1.8,
+    "обувь": 1.0,
+    "нож": 0.3
+}
+max_weight = 10.0
+
+
+
+
+import warnings
+
+warnings.filterwarnings('ignore')
+
+#При отправке кода на Выполнение раскомментируйте строку ниже, чтобы задать значения аргументов и вызвать функцию
+
+#При отправке решения на Проверку закомментируйте эту строку обратно - система автоматически подставит разные значения аргументов и вызовет функцию для проверки
+
+#items = {
+#     "ключи": 0.3,
+#     "кошелек": 0.2,
+#     "телефон": 0.5,
+#     "зажигалка": 0.1
+# }
+#max_weight = 1.0
+
+# Введите ваше решение ниже
+
+possible_items = []
+for key, value in items.items():
+    if value <= max_weight:
+        possible_items.append(key)
+        max_weight -= value
+
+print(possible_items) 
+
+
+max_weight = 10.0
+backpacks_test = []
+sorted_result = []
+for i in range(2**len(items)):
+    backpack_test = {}
+    weight = 0
+    for j, item in enumerate(items):
+        if i & (1 << j):
+            if weight + items[item] <= max_weight:
+                backpack_test[item] = items[item]
+                weight += items[item]
+            else:
+                break
+    backpacks_test.append(backpack_test)
+
+full_result = [backpack_test for backpack_test in backpacks_test if backpack_test]
+result = []
+for item in full_result:
+    if item not in result:
+        result.append(item)
+
+x = 0
+for i in result:
+    if dict(sorted(i.items(), key=lambda item: item[1], reverse=True)) == dict(sorted(backpack.items(), key=lambda item: item[1], reverse=True)):
+        x += 1
+if x > 0:  
+    print(True)
+else:
+    print(False)
+
+==6==========================================================
+
+items = {
+    "спальник": 1.5,
+    "палатка": 3.2,
+    "термос": 0.6,
+    "карта": 0.1,
+    "фонарик": 0.3,
+    "котелок": 0.8,
+    "еда": 2.5,
+    "одежда": 1.7,
+    "обувь": 1.2,
+    "нож": 0.2
+}
+max_weight = 1.0
+
+
+
+
+import warnings
+
+warnings.filterwarnings('ignore')
+
+#При отправке кода на Выполнение раскомментируйте строку ниже, чтобы задать значения аргументов и вызвать функцию
+
+#При отправке решения на Проверку закомментируйте эту строку обратно - система автоматически подставит разные значения аргументов и вызовет функцию для проверки
+
+#items = {
+#     "ключи": 0.3,
+#     "кошелек": 0.2,
+#     "телефон": 0.5,
+#     "зажигалка": 0.1
+# }
+#max_weight = 1.0
+
+# Введите ваше решение ниже
+
+possible_items = []
+for key, value in items.items():
+    if value <= max_weight:
+        possible_items.append(key)
+        max_weight -= value
+
+print(possible_items) 
+
+
+max_weight = 1.0
+backpacks_test = []
+sorted_result = []
+for i in range(2**len(items)):
+    backpack_test = {}
+    weight = 0
+    for j, item in enumerate(items):
+        if i & (1 << j):
+            if weight + items[item] <= max_weight:
+                backpack_test[item] = items[item]
+                weight += items[item]
+            else:
+                break
+    backpacks_test.append(backpack_test)
+
+full_result = [backpack_test for backpack_test in backpacks_test if backpack_test]
+result = []
+for item in full_result:
+    if item not in result:
+        result.append(item)
+
+x = 0
+for i in result:
+    if dict(sorted(i.items(), key=lambda item: item[1], reverse=True)) == dict(sorted(backpack.items(), key=lambda item: item[1], reverse=True)):
+        x += 1
+if x > 0:  
+    print(True)
+else:
+    print(False)
+
+==7========================================================
+
+items = {
+    "спальник": 1.0,
+    "палатка": 2.0,
+    "термос": 0.5,
+    "карта": 0.1,
+    "фонарик": 0.2,
+    "котелок": 0.5,
+    "еда": 2.0,
+    "одежда": 1.0,
+    "обувь": 0.8,
+    "нож": 0.2
+}
+max_weight = 10.0
+
+
+
+
+import warnings
+
+warnings.filterwarnings('ignore')
+
+#При отправке кода на Выполнение раскомментируйте строку ниже, чтобы задать значения аргументов и вызвать функцию
+
+#При отправке решения на Проверку закомментируйте эту строку обратно - система автоматически подставит разные значения аргументов и вызовет функцию для проверки
+
+#items = {
+#     "ключи": 0.3,
+#     "кошелек": 0.2,
+#     "телефон": 0.5,
+#     "зажигалка": 0.1
+# }
+#max_weight = 1.0
+
+# Введите ваше решение ниже
+
+possible_items = []
+for key, value in items.items():
+    if value <= max_weight:
+        possible_items.append(key)
+        max_weight -= value
+
+print(possible_items) 
+
+
+max_weight = 10.0
+backpacks_test = []
+sorted_result = []
+for i in range(2**len(items)):
+    backpack_test = {}
+    weight = 0
+    for j, item in enumerate(items):
+        if i & (1 << j):
+            if weight + items[item] <= max_weight:
+                backpack_test[item] = items[item]
+                weight += items[item]
+            else:
+                break
+    backpacks_test.append(backpack_test)
+
+full_result = [backpack_test for backpack_test in backpacks_test if backpack_test]
+result = []
+for item in full_result:
+    if item not in result:
+        result.append(item)
+
+x = 0
+for i in result:
+    if dict(sorted(i.items(), key=lambda item: item[1], reverse=True)) == dict(sorted(backpack.items(), key=lambda item: item[1], reverse=True)):
+        x += 1
+if x > 0:  
+    print(True)
+else:
+    print(False)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
