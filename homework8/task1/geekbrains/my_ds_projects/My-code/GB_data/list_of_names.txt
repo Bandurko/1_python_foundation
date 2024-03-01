@@ -1,0 +1,12 @@
+Path,Type,Size
+geekbrains\age_report.csv,File,0
+geekbrains\avg_list.txt,File,0
+geekbrains\california_housing_train.csv,File,0
+geekbrains\covid.json,File,0
+geekbrains\input2.txt,File,0
+geekbrains\student_performance.txt,File,0
+geekbrains\my_ds_projects,Directory,0
+geekbrains\my_ds_projects\My-code,Directory,0
+geekbrains\my_ds_projects\My-code\GB_data,Directory,0
+geekbrains\my_ds_projects\My-code\GB_data\fruits.csv,File,0
+geekbrains\my_ds_projects\My-code\GB_data\list_of_names.txt,File,0
