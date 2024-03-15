@@ -138,6 +138,7 @@ except (InvalidTextError, InvalidNumberError) as e:
 
 
 ''' Правильное от ГБ '''
+
 class InvalidTextError(ValueError):
     def __init__(self, text):
         self.text = text
