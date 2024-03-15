@@ -140,7 +140,6 @@ class Rectangle:
 '''
 
 
-
 ''' Правильное от ГБ '''
 
 class NegativeValueError(ValueError):

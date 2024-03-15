@@ -136,7 +136,6 @@ except (InvalidTextError, InvalidNumberError) as e:
 '''
 
 
-
 ''' Правильное от ГБ '''
 
 class InvalidTextError(ValueError):

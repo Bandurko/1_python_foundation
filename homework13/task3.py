@@ -86,7 +86,7 @@ class Employee(Person):
     def get_level(self):
         return sum(int(digit) for digit in str(self.ID)) % 7
 
-
+#
 # Пример использования:
 #
 # Не успевааю разобраться (((
