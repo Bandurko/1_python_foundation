@@ -1,5 +1,6 @@
 ''' Правильное решение от ГБ '''
 
+
 import pytest
 
 class Person:

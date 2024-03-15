@@ -102,6 +102,7 @@ class Rectangle:
 
 '''
 
+
 import unittest
 
 
@@ -163,6 +164,7 @@ class Rectangle:
         perimeter = self.perimeter() - other.perimeter()
         height = perimeter / 2 - width
         return Rectangle(width, height)
+
 
 # Введите ваше решение ниже
 

@@ -42,6 +42,7 @@ FAILED (failures=1)
 
 
 # Введите ваше решение ниже
+
 import unittest
 
 class Person:

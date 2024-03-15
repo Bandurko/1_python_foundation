@@ -1,8 +1,4 @@
-'''
-
-Правильное решение от ГБ
-
-'''
+''' Правильное решение от ГБ '''
 
 class NegativeValueError(ValueError):
     pass
