@@ -88,7 +88,7 @@ class Employee(Person):
 
 
 # Пример использования:
-#
+# Не успевааю разобраться (((
 # try:
 #     person = Person("Иванов", "Иван", "Иванович", 25)
 #     person.birthday()
